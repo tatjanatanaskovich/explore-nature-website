@@ -1,20 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+/* BASIC COLORS
 
-  <link rel="stylesheet" href="css/style.css">
-        
-  <title>Explore the Nature | Exciting tours for adventurous people</title>
-</head>
+primarygreen: #00cc88
 
-<body>
+bluegreen: #00cccc
 
-        
-    
+lightgreen: #33ffbb
 
-</body>
-</html>
+green: #00cc44
+
+comp-red: #cc0044
+
+END OF BASIC COLORS */
+
+
+/* RESET */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+  padding: 30px;
+}
+
+
+/*RESET END */
+
+
+
+/*  HEADER SECTION*/
+
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom,
+    rgba(51, 255, 187, 0.8),
+    rgba(0, 204, 204, 0.8)),
+    url(../img/hero-bg.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 200px;
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 3px 3px #666;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 35px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 17px;
+}
+
+
+/*  HEADER SECTION END*/
