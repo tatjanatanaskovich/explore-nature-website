@@ -1,0 +1,22 @@
+{
+  "name": "explore-nature-in-serbia",
+  "version": "1.0.0",
+  "description": "Landing page for Explore Nature in Serbia website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatjanatanaskovich/explore-nature-website.git"
+  },
+  "author": "Tatjana Tanaskovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tatjanatanaskovich/explore-nature-website/issues"
+  },
+  "homepage": "https://github.com/tatjanatanaskovich/explore-nature-website#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
