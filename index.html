@@ -37,7 +37,7 @@
   
   <header class="header">
     <div class="header__logo-box">
-      <img src="/img/logo.png" class="header__logo" alt="logo Explore Nature in Serbia">
+      <img srcset="/img/logo-1x.png 1x, /img/logo-2x.png 2x" class="header__logo" alt="logo Explore Nature in Serbia" src="img/logo-2x.png">
     </div>
     <div class="header__text-box">
       <h1 class="heading-primary">
@@ -69,9 +69,30 @@
         </div>
         <div class="col-1-of-2">
           <div class="composition">
-            <img src="img/img-nature-1.jpeg" alt="Photo Nature 1" class="composition__photo composition__photo--p1">
-            <img src="img/img-nature-2.jpeg" alt="Photo Nature 2" class="composition__photo composition__photo--p2">
-            <img src="img/img-nature-4.jpg" alt="Photo Nature 3" class="composition__photo composition__photo--p3">
+          
+            <img srcset="img/img-nat-1-300.jpg 300w, img/img-nat-1-1000.jpg 1000w"
+                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                 alt="Photo 1"
+                 class="composition__photo composition__photo--p1"
+                 src="img/img-nat-1-1000.jpg">
+
+            <img srcset="img/img-nat-2-300.jpg 300w, img/img-nat-2-1000.jpg 1000w"
+                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                 alt="Photo 2"
+                 class="composition__photo composition__photo--p2"
+                 src="img/img-nat-2-1000.jpg">
+
+            <img srcset="img/img-nat-300.jpg 300w, img/img-nat-3-1000.jpg 1000w"
+                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                 alt="Photo 3"
+                 class="composition__photo composition__photo--p3"
+                 src="img/img-nat-3-1000.jpg">
+           
+<!--
+            <img src="img/img-nat-1-1000.jpg" alt="Photo Nature 1" class="composition__photo composition__photo--p1">
+            <img src="img/img-nat-2-1000.jpg" alt="Photo Nature 2" class="composition__photo composition__photo--p2">
+            <img src="img/img-nat-3-1000.jpg" alt="Photo Nature 3" class="composition__photo composition__photo--p3">
+-->
           </div>
         </div>
       </div>
@@ -325,7 +346,11 @@
 
   <footer class="footer">
     <div class="footer__logo-box">
-      <img src="img/logo.png" alt="Logo" class="footer__logo">
+      <picture class="footer__logo">
+        <source srcset="img/logo-small-1x.png 1x, img/logo-small-2x.png 2x" 
+        media="(max-width: 37.5em)">
+        <img srcset="img/logo-1x.png 1x, img/logo-2x.png 2x" alt="Full logo" src="img/logo-2x.png">
+      </picture>
     </div>
     <div class="row">
       <div class="col-1-of-2">
